@@ -256,11 +256,11 @@ window.addEventListener('mousemove', (e) => {
   if (isHoveringProject) {
     // Move the preview image near the cursor
     gsap.to(projectPreview, {
-      x: e.clientX,
-      y: e.clientY,
+      x: e.clientX - 250, // Offset to the left
+      y: e.clientY - 150, // Offset upwards
       duration: 0.5,
       ease: "power3.out"
-});
+    });
   }
 });
 
